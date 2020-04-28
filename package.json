@@ -1,0 +1,11 @@
+{
+  "name": "tannerwelsh-test-actions",
+  "version": "1.0.0",
+  "description": "Sample Clay actions for development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanner Welsh <tannerwelsh@gmail.com>",
+  "license": "MIT",
+}
