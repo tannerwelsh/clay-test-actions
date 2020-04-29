@@ -60,4 +60,4 @@ function mockGithubUserLookup(actionInputs, context) {
   return Clay.fail('Failed to run mockGithubUserLookup()')
 }
 
-module.exportsDefinition = mockGithubUserLookupDefinition
+module.exports = mockGithubUserLookupDefinition
