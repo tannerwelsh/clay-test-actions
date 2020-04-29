@@ -31,16 +31,7 @@ const getGoogleJobsForCompanyDefinition = {
   ],
   outputParameterSchema: [
     {
-      name: "jobs",
       type: "array"
-    },
-    {
-      name: "count",
-      type: "integer"
-    },
-    {
-      name: "hasMatches",
-      type: "boolean"
     }
   ],
   inputSample: {
@@ -48,27 +39,25 @@ const getGoogleJobsForCompanyDefinition = {
     companyURL: "http://slack.com/",
     keywords: "Data,Software",
   },
-  outputSample: {
-    jobs: [
-      {
-        type: "Full-time",
-        title: "Data Engineer",
-        labels: {
-          location: "San Francisco, CA"
-        },
-        company: "Slack",
-        lastUpdated: "Over 1 month ago"
-      }, {
-        type: "Full-time",
-        title: "Staff Data Scientist",
-        labels: {
-          location: "San Francisco, CA"
-        },
-        company: "Slack",
-        lastUpdated: "Over 1 month ago"
-      }
-    ]
-  },
+  outputSample: [
+    {
+      type: "Full-time",
+      title: "Data Engineer",
+      labels: {
+        location: "San Francisco, CA"
+      },
+      company: "Slack",
+      lastUpdated: "Over 1 month ago"
+    }, {
+      type: "Full-time",
+      title: "Staff Data Scientist",
+      labels: {
+        location: "San Francisco, CA"
+      },
+      company: "Slack",
+      lastUpdated: "Over 1 month ago"
+    }
+  ],
   restrictionFlags: {
     isExportable: true
   },
@@ -167,11 +156,12 @@ function mockGetGoogleJobsForCompany(actionInputs, context) {
     const imagePreview = "https://banner2.cleanpng.com/20180728/tju/kisspng-google-logo-business-microsoft-windows-operating-system-5b5cb99e99ca38.3321008115328034866299.jpg"
 
     return Clay.success(
-      {
-        "jobs": mockResults,
-        "count": 10,
-        "hasMatches": true,
-      },
+      mockResults,
+      // {
+      //   "jobs": mockResults,
+      //   "count": 10,
+      //   "hasMatches": true,
+      // },
       textPreview,
       imagePreview,
     )
