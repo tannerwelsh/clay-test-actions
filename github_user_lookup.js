@@ -47,7 +47,7 @@ function mockGithubUserLookup(actionInputs, context) {
   console.log(" mockGithubUserLookup -> context", context)
 
   if (actionInputs.username) {
-    const textPreview = `GH Profile for ${username}`
+    const textPreview = `GH Profile for ${actionInputs.username}`
     const imagePreview = mockResultData.user.avatarUrl
 
     return Clay.success(
