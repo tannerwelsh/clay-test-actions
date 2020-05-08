@@ -1,0 +1,80 @@
+# For use with https://json-schema-faker.js.org/
+id: Profile
+type: object
+properties:
+  profiles:
+    type: array
+    minItems: 10
+    items:
+      properties:
+        firstName:
+          type: string
+          faker: name.firstName
+        lastName:
+          type: string
+          faker: name.lastName
+        age:
+          type: integer
+          minimum: 18
+          maximum: 60
+        email:
+          type: string
+          faker: internet.email
+        link:
+          type: string
+          faker: internet.url
+        avatar:
+          type: string
+          faker: image.imageUrl
+        bio:
+          type: string
+          faker: lorem.paragraph
+        job:
+          type: string
+          faker: name.title
+        company:
+          type: object
+          properties:
+            name:
+              type: string
+              faker: company.companyName
+            url:
+              type: string
+              faker: internet.url
+            address:
+              type: object
+              properties:
+                street:
+                  type: string
+                  faker: address.streetAddress
+                city:
+                  type: string
+                  faker: address.city
+                state:
+                  type: string
+                  faker: address.state
+                country:
+                  type: string
+                  faker: address.country
+                zip:
+                  type: string
+                  faker: address.zipCode
+              required:
+                - street
+                - city
+                - zip
+          required:
+            - name
+        createdAt:
+          type: date
+          faker: date.past
+      required:
+        - firstName
+        - lastName
+        - email
+        - age
+        - avatar
+        - job
+        - bio
+        - company
+        - createdAt

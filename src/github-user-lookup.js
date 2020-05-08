@@ -1,6 +1,6 @@
 const _ = require("lodash");
 
-const mockResultData = require("./github_user_lookup__mock_data.json");
+const mockResultData = require("../sample-data/github-user-lookup--mock-data.json");
 
 const mockGithubUserLookupDefinition = {
   name: "mockgithubuserlookup",
@@ -17,12 +17,12 @@ const mockGithubUserLookupDefinition = {
       description: "Username / handle of GitHub user",
     },
   ],
-  // outputParameterSchema: [
-  //   {
-  //     name: "user",
-  //     type: "object",
-  //   },
-  // ],
+  outputParameterSchema: [
+    {
+      name: "url",
+      type: "string",
+    },
+  ],
   inputSample: {
     username: "tannerwelsh",
   },

@@ -1,0 +1,122 @@
+{
+  "companyName": "Jerde, Quitzon and Dickens",
+  "companySite": "http://rae.com",
+  "address": {
+    "street": "444 Flatley Island",
+    "city": "Colefort",
+    "zip": "10671-5482",
+    "state": "Kentucky"
+  },
+  "employees": [
+    {
+      "firstName": "Melisa",
+      "lastName": "Runte",
+      "email": "Dalton.Kris14@gmail.com",
+      "age": 51,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Internal Creative Developer",
+      "bio": "Autem molestiae libero autem a. Et quo porro consequatur ratione sint minima quasi eum harum. Dolores ea eveniet vitae vel necessitatibus non.",
+      "createdAt": "2019-06-30T03:16:39.387Z",
+      "link": "http://holly.biz"
+    },
+    {
+      "firstName": "Carter",
+      "lastName": "Lowe",
+      "email": "Elisa.Welch@hotmail.com",
+      "age": 53,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Global Quality Architect",
+      "bio": "Sequi voluptatem vero at voluptates consectetur quia quia expedita. Nisi sunt magni. Tempora sint eum sit soluta. Quisquam non rem modi corrupti. Sit rerum sequi doloremque est impedit excepturi perferendis.",
+      "createdAt": "2019-08-25T23:23:37.596Z",
+      "link": "https://destany.name"
+    },
+    {
+      "firstName": "Delaney",
+      "lastName": "Kris",
+      "email": "Edmond.Moore@yahoo.com",
+      "age": 40,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "International Accountability Supervisor",
+      "bio": "Aut quisquam officia tempora id perferendis. Praesentium iure molestias autem iste. Et aut sint velit consequuntur ex.",
+      "createdAt": "2019-08-21T16:46:58.377Z",
+      "company": "labore"
+    },
+    {
+      "firstName": "Barry",
+      "lastName": "Purdy",
+      "email": "Fausto99@gmail.com",
+      "age": 41,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Internal Group Consultant",
+      "bio": "Voluptate dolores sed est iure et autem qui. Et rem et ut. Libero eum at. Maiores ipsa magni quas. Placeat vel dolores sint.",
+      "createdAt": "2019-12-28T15:48:53.395Z",
+      "link": "http://leanna.name"
+    },
+    {
+      "firstName": "Reina",
+      "lastName": "Kuvalis",
+      "email": "Renee_Schiller26@gmail.com",
+      "age": 23,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Future Directives Technician",
+      "bio": "Maxime blanditiis placeat qui architecto sed. Aliquam unde amet tenetur vel eaque cupiditate velit sint. Aliquam deserunt non sit nostrum quaerat omnis corporis.",
+      "createdAt": "2020-04-30T08:49:09.960Z",
+      "link": "https://frieda.org"
+    },
+    {
+      "firstName": "Kiley",
+      "lastName": "Pagac",
+      "email": "Cullen89@yahoo.com",
+      "age": 56,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Human Usability Specialist",
+      "bio": "Sapiente perferendis rem sint delectus quidem et. Cupiditate mollitia sint rerum consequatur expedita ut quasi. Earum odit ad a quidem officiis asperiores nobis deleniti et. Omnis et ut ea iure.",
+      "createdAt": "2019-09-03T04:10:13.186Z",
+      "link": "https://neha.name"
+    },
+    {
+      "firstName": "Darron",
+      "lastName": "Rogahn",
+      "email": "Randall_Heathcote15@yahoo.com",
+      "age": 52,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "International Web Consultant",
+      "bio": "Harum fugiat in debitis voluptas aliquam voluptas ab. Qui facere rerum rerum in deleniti sunt tempore. Aut dignissimos quia rerum assumenda consequatur dolores non ullam ullam. Eveniet occaecati ipsam ratione nihil omnis magni veniam. Facere est sed nulla. Sed maxime harum iste.",
+      "createdAt": "2019-11-19T09:19:28.260Z",
+      "link": "https://dangelo.biz"
+    },
+    {
+      "firstName": "Orville",
+      "lastName": "Stiedemann",
+      "email": "Emilio16@gmail.com",
+      "age": 57,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Senior Markets Planner",
+      "bio": "Voluptate aut iure cumque est dicta maiores rerum. Minima unde minus cumque dolorum pariatur qui optio. Dolor quis optio veniam voluptas cum qui maxime.",
+      "createdAt": "2020-02-20T15:40:26.038Z",
+      "link": "https://chelsea.info"
+    },
+    {
+      "firstName": "Elva",
+      "lastName": "Fadel",
+      "email": "Damon11@yahoo.com",
+      "age": 52,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Chief Assurance Supervisor",
+      "bio": "Nihil consequatur eligendi sed eum reiciendis laudantium molestias dolores non. Aut nesciunt nam. Harum distinctio qui esse veniam natus ipsum eum porro aut. Rerum voluptatibus occaecati quisquam optio possimus ut. Alias assumenda quos et quae nihil atque.",
+      "createdAt": "2019-09-05T15:47:59.903Z",
+      "link": "http://sincere.net"
+    },
+    {
+      "firstName": "Charlene",
+      "lastName": "Sporer",
+      "email": "Bethel73@hotmail.com",
+      "age": 47,
+      "avatar": "http://lorempixel.com/640/480",
+      "job": "Internal Web Manager",
+      "bio": "Temporibus neque facere soluta consequatur et qui nesciunt. Ex dolor magnam rerum incidunt et aliquam. Quod nisi sequi consequuntur magnam modi nam rem. Dolore est amet ut aliquid maiores sint. Quos dolores vel laudantium quaerat numquam sequi nobis odio expedita. Voluptas explicabo aut eos neque occaecati magni aperiam et quam.",
+      "createdAt": "2019-05-16T08:58:47.020Z",
+      "link": "http://gennaro.org"
+    }
+  ]
+}

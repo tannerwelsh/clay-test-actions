@@ -1,0 +1,34 @@
+{
+  "firstName": "Trycia",
+  "lastName": "Beatty",
+  "email": "Emile_Bauch49@gmail.com",
+  "age": 28,
+  "active": false,
+  "avatar": "https://i.picsum.photos/id/351/300/300.jpg",
+  "job": "Customer Creative Planner",
+  "bio": "Modi autem et provident cumque cum qui. Repudiandae laudantium aut sequi soluta molestiae soluta repellendus ipsum ut. Aliquam voluptatem rerum occaecati sapiente eum quam. Cumque nihil unde voluptatem ut. Pariatur et natus consequatur.",
+  "keywords": [
+    "experiences",
+    "technologies",
+    "e-business",
+    "content",
+    "mindshare",
+    "architectures",
+    "bandwidth",
+    "e-services"
+  ],
+  "pastCompanies": [
+    "Stark and Sons",
+    "Howe - Cassin",
+    "Lind, Moen and Weimann",
+    "Hahn, Schulist and Larkin",
+    "Murray LLC",
+    "Grimes, Terry and Berge",
+    "Effertz and Sons",
+    "Corkery, Crona and Schmeler",
+    "Bayer, Bashirian and Lynch",
+    "Koepp - Homenick"
+  ],
+  "createdAt": "2020-01-23T20:42:54.023Z",
+  "link": "http://janet.info"
+}

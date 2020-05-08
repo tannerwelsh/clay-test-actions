@@ -1,0 +1,23 @@
+{
+  "firstName": "Trycia",
+  "lastName": "Beatty",
+  "email": "Emile_Bauch49@gmail.com",
+  "age": 28,
+  "active": false,
+  "avatar": "https://i.picsum.photos/id/351/300/300.jpg",
+  "job": "Customer Creative Planner",
+  "bio": "Modi autem et provident cumque cum qui. Repudiandae laudantium aut sequi soluta molestiae soluta repellendus ipsum ut. Aliquam voluptatem rerum occaecati sapiente eum quam. Cumque nihil unde voluptatem ut. Pariatur et natus consequatur.",
+  "company": {
+    "name": "Emmerich, Jast and Boyle",
+    "url": "http://christop.org",
+    "address": {
+      "street": "695 Roxanne Ridges",
+      "city": "Kleinton",
+      "zip": "80668-4562",
+      "state": "Connecticut",
+      "country": "Lao People's Democratic Republic"
+    }
+  },
+  "createdAt": "2020-01-23T20:42:54.023Z",
+  "link": "http://janet.info"
+}

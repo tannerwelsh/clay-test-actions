@@ -7,13 +7,14 @@
  *
  */
 
-const getGoogleJobsForCompany = require("./get_google_jobs_for_company.js")
-const githubUserLookup = require("./github_user_lookup.js")
+const getGoogleJobsForCompany = require("./get-google-jobs-for-company.js")
+const githubUserLookup = require("./github-user-lookup.js")
+const exampleDataShapes = require("./example-data-shapes.js")
 
 const myActionPackage = {
   name: "tannerwelsh-test-actions", //to uniquely identify an action pacakge for future updates
   description: "sample actions for development",
-  actionDefinitions: [getGoogleJobsForCompany, githubUserLookup],
+  actionDefinitions: [getGoogleJobsForCompany, githubUserLookup, exampleDataShapes],
 }
 
 module.exports = myActionPackage
