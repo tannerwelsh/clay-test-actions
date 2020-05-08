@@ -1,7 +1,6 @@
 const _ = require("lodash");
 
 const mockResultData = require("./github_user_lookup__mock_data.json");
-const Clay = require("./clay_helper.js");
 
 const mockGithubUserLookupDefinition = {
   name: "mockgithubuserlookup",
@@ -91,18 +90,18 @@ const mockGithubUserLookupDefinition = {
 };
 
 function mockGithubUserLookup(actionInputs, context) {
-  console.log("-- debug: in mockGithubUserLookup() --");
-  console.log(" mockGithubUserLookup -> actionInputs", actionInputs);
-  console.log(" mockGithubUserLookup -> context", context);
+  context.log("-- debug: in mockGithubUserLookup() --");
+  context.log(" mockGithubUserLookup -> actionInputs", actionInputs);
+  context.log(" mockGithubUserLookup -> context", context);
 
   if (actionInputs.username) {
     const textPreview = `GH Profile for ${actionInputs.username}`;
     const imagePreview = mockResultData.user.avatarUrl;
 
-    return Clay.success(mockResultData.user, textPreview, imagePreview);
+    return context.success({ data: mockResultData.user, textPreview, imagePreview });
   }
 
-  return Clay.fail("Failed to run mockGithubUserLookup()");
+  return context.fail({ message: "Failed to run mockGithubUserLookup()" });
 }
 
 module.exports = mockGithubUserLookupDefinition;

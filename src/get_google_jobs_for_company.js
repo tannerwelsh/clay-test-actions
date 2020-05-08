@@ -1,5 +1,3 @@
-const Clay = require('./clay_helper.js')
-
 const getGoogleJobsForCompanyDefinition = {
   name: "mockgetgooglejobsforcompany",
   function: mockGetGoogleJobsForCompany,
@@ -147,16 +145,16 @@ const mockResults = [{
 }]
 
 function mockGetGoogleJobsForCompany(actionInputs, context) {
-  console.log("-- debug: in mockGetGoogleJobsForCompany() --")
-  console.log(" mockGetGoogleJobsForCompany -> actionInputs", actionInputs)
-  console.log(" mockGetGoogleJobsForCompany -> context", context)
+  context.log("-- debug: in mockGetGoogleJobsForCompany() --")
+  context.log(" mockGetGoogleJobsForCompany -> actionInputs", actionInputs)
+  context.log(" mockGetGoogleJobsForCompany -> context", context)
 
   if (actionInputs.companyName || actionInputs.companyURL) {
     const textPreview = "10 matching jobs for Slack"
     const imagePreview = "https://banner2.cleanpng.com/20180728/tju/kisspng-google-logo-business-microsoft-windows-operating-system-5b5cb99e99ca38.3321008115328034866299.jpg"
 
-    return Clay.success(
-      mockResults,
+    return context.success({
+      data: mockResults,
       // {
       //   "jobs": mockResults,
       //   "count": 10,
@@ -164,10 +162,10 @@ function mockGetGoogleJobsForCompany(actionInputs, context) {
       // },
       textPreview,
       imagePreview,
-    )
+    })
   }
 
-  return Clay.fail('Failed to run mockGetGoogleJobsForCompany()')
+  return context.fail({ message: 'Failed to run mockGetGoogleJobsForCompany()' })
 }
 
 module.exports = getGoogleJobsForCompanyDefinition
