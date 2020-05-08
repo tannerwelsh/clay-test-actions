@@ -7,7 +7,7 @@
  *
  */
 
-const getGoogleJobsForCompany = require("../get_google_jobs_for_company.js")
+const getGoogleJobsForCompany = require("./get_google_jobs_for_company.js")
 const githubUserLookup = require("./github_user_lookup.js")
 
 const myActionPackage = {

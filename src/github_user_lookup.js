@@ -34,55 +34,55 @@ const mockGithubUserLookupDefinition = {
     "issues",
     "avatarUrl",
   ]),
-  views: [
-    {
-      name: "Profile Overview",
-      type: "FieldSet",
-      props: {
-        object: {
-          type: "object",
-          map: {
-            Name: "user.name",
-            Username: "user.login",
-            URL: "user.url",
-            Gists: "user.gists.totalCount",
-            Avatar: "user.avatarUrl",
-            "Followers / Following": {
-              template:
-                "{{user.followers.totalCount}} / {{user.following.totalCount}}",
-            },
-          },
-        },
-        // isCustomizable: true,
-      },
-    },
-    {
-      name: "Contrib. Repos",
-      type: "Table",
-      props: {
-        rows: {
-          type: "array",
-          iterate: "user.repositoriesContributedTo.nodes",
-          orderBy: ["name", "ASC"],
-          map: {
-            Repo: {
-              component: "Link",
-              props: {
-                href: "url",
-                text: "name",
-              },
-            },
-            Owner: {
-              template: "@{{owner.login}}",
-            },
-            "Star Gazers": "stargazers.totalCount",
-            Description: "description",
-          },
-          limit: 6,
-        },
-      },
-    },
-  ],
+  // views: [
+  //   {
+  //     name: "Profile Overview",
+  //     type: "FieldSet",
+  //     props: {
+  //       object: {
+  //         type: "object",
+  //         map: {
+  //           Name: "user.name",
+  //           Username: "user.login",
+  //           URL: "user.url",
+  //           Gists: "user.gists.totalCount",
+  //           Avatar: "user.avatarUrl",
+  //           "Followers / Following": {
+  //             template:
+  //               "{{user.followers.totalCount}} / {{user.following.totalCount}}",
+  //           },
+  //         },
+  //       },
+  //       // isCustomizable: true,
+  //     },
+  //   },
+  //   {
+  //     name: "Contrib. Repos",
+  //     type: "Table",
+  //     props: {
+  //       rows: {
+  //         type: "array",
+  //         iterate: "user.repositoriesContributedTo.nodes",
+  //         orderBy: ["name", "ASC"],
+  //         map: {
+  //           Repo: {
+  //             component: "Link",
+  //             props: {
+  //               href: "url",
+  //               text: "name",
+  //             },
+  //           },
+  //           Owner: {
+  //             template: "@{{owner.login}}",
+  //           },
+  //           "Star Gazers": "stargazers.totalCount",
+  //           Description: "description",
+  //         },
+  //         limit: 6,
+  //       },
+  //     },
+  //   },
+  // ],
   restrictionFlags: {
     isExportable: true,
   },
