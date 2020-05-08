@@ -18,22 +18,22 @@ const mockGithubUserLookupDefinition = {
       description: "Username / handle of GitHub user",
     },
   ],
-  outputParameterSchema: [
-    {
-      name: "user",
-      type: "object",
-    },
-  ],
+  // outputParameterSchema: [
+  //   {
+  //     name: "user",
+  //     type: "object",
+  //   },
+  // ],
   inputSample: {
     username: "tannerwelsh",
   },
-  outputSample: _.pick(mockResultData, [
-    "user.url",
-    "user.name",
-    "user.gists",
-    "user.login",
-    "user.issues",
-    "user.avatarUrl",
+  outputSample: _.pick(mockResultData.user, [
+    "url",
+    "name",
+    "gists",
+    "login",
+    "issues",
+    "avatarUrl",
   ]),
   views: [
     {
@@ -99,7 +99,7 @@ function mockGithubUserLookup(actionInputs, context) {
     const textPreview = `GH Profile for ${actionInputs.username}`;
     const imagePreview = mockResultData.user.avatarUrl;
 
-    return Clay.success(mockResultData, textPreview, imagePreview);
+    return Clay.success(mockResultData.user, textPreview, imagePreview);
   }
 
   return Clay.fail("Failed to run mockGithubUserLookup()");
