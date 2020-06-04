@@ -1,6 +1,6 @@
 const _ = require("lodash");
 
-const mockResultData = require("../sample-data/github-user-lookup--mock-data.json");
+const mockResultData = require("./sample-data/github-user-lookup--mock-data.json");
 
 const mockGithubUserLookupDefinition = {
   name: "mockgithubuserlookup",

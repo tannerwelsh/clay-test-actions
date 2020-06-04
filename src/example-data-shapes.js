@@ -1,11 +1,11 @@
 const _ = require("lodash");
 
 const DATA_SHAPES = {
-  arrayOfObjects: require("../sample-data/array-of-objects.json"),
-  objectWithScalarValues: require("../sample-data/object-with-scalar-values.json"),
-  objectWithNestedObjects: require("../sample-data/object-with-nested-objects.json"),
-  objectWithNestedArraysOfObjects: require("../sample-data/object-with-nested-arrays-of-objects.json"),
-  objectWithNestedArraysOfScalars: require("../sample-data/object-with-nested-arrays-of-scalars.json"),
+  arrayOfObjects: require("./sample-data/array-of-objects.json"),
+  objectWithScalarValues: require("./sample-data/object-with-scalar-values.json"),
+  objectWithNestedObjects: require("./sample-data/object-with-nested-objects.json"),
+  objectWithNestedArraysOfObjects: require("./sample-data/object-with-nested-arrays-of-objects.json"),
+  objectWithNestedArraysOfScalars: require("./sample-data/object-with-nested-arrays-of-scalars.json"),
 }
 
 const exampleDataShapesDefinition = {
