@@ -13,7 +13,7 @@ const exampleDataShapes = require("./example-data-shapes.js")
 const exampleViewOptions = require("./example-view-options.js")
 
 const myActionPackage = {
-  name: "tannerwelsh-test-actions", //to uniquely identify an action pacakge for future updates
+  name: "tannerwelsh_test_actions", //to uniquely identify an action pacakge for future updates
   description: "sample actions for development",
   actionDefinitions: [getGoogleJobsForCompany, githubUserLookup, exampleDataShapes, exampleViewOptions],
 }

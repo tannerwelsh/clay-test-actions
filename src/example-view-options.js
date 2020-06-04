@@ -18,7 +18,6 @@ const exampleViewOptionsDefinition = {
     cards: {
       header: {
         title: "{{ lastName }}, {{ firstName }}",
-        // title: "Custom Header",
         image: "{{ avatar }}"
       }
     }

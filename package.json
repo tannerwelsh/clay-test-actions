@@ -1,5 +1,5 @@
 {
-  "name": "tannerwelsh-test-actions",
+  "name": "tannerwelsh_test_actions",
   "version": "1.0.0",
   "description": "Sample Clay actions for development",
   "main": "index.js",
@@ -19,5 +19,5 @@
     "@clay-run/clay-action-client": "latest",
     "lodash": "^4.17.15"
   },
-  "clay-action-package-id": "b8cb6ff6-51b4-4c98-8811-4aa09b8ad0d5"
+  "clay-action-package-id": "f0235266-4e14-460f-a872-020e0cb69384"
 }
