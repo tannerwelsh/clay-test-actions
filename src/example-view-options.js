@@ -1,5 +1,5 @@
 const _ = require("lodash");
-const sampleData = require("./sample-data/array-of-objects.json")
+const sampleData = require("./sample-data/view-options-array.json")
 
 const exampleViewOptionsDefinition = {
   name: "exampleViewOptions",
@@ -17,8 +17,8 @@ const exampleViewOptionsDefinition = {
   viewOptions: {
     cards: {
       header: {
-        title: "{{ lastName }}, {{ firstName }}",
-        image: "{{ avatar }}"
+        title: "{{ alias.lastName }}, {{ alias.firstName }}",
+        image: "{{ avatar.uri }}"
       }
     }
   },
