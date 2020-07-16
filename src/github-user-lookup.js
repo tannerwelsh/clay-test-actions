@@ -20,7 +20,7 @@ const mockGithubUserLookupDefinition = {
   outputParameterSchema: [
     {
       name: "url",
-      type: "string",
+      type: "text",
     },
   ],
   inputSample: {

@@ -14,7 +14,7 @@ const getGoogleJobsForCompanyDefinition = {
     },
     {
       name: "companyURL",
-      type: "url",
+      type: "text",
       displayName: "Company URL",
       optional: true,
       description: "URL of company (optional). Used instead of companyName"
