@@ -35,6 +35,7 @@ const exampleButtonActionDefinition = {
   viewOptions: {
     button: {
       showInCell: true,
+      text: 'Custom button text'
     },
   },
 
