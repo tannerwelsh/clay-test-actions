@@ -2,6 +2,7 @@ const _ = require('lodash');
 
 const exampleButtonActionDefinition = {
   name: 'exampleButtonAction',
+  // type: 'create-update', // default is 'search'
   function: exampleButtonAction,
   documentationUri: 'http://github.com/clay-run/actions/myfirstactionguide.md',
   displayName: 'Example Button Action',
@@ -13,9 +14,6 @@ const exampleButtonActionDefinition = {
       type: 'text',
       displayName: 'Input email',
       description: 'Email to send notification to',
-
-      // !!This disables automatic recomputes
-      skipRecomputeOnChange: true,
     },
   ],
   outputParameterSchema: [
@@ -34,7 +32,7 @@ const exampleButtonActionDefinition = {
   // !!This is the key setting
   viewOptions: {
     button: {
-      showInCell: true,
+      // showInCell: true,
       text: 'Custom button text'
     },
   },
