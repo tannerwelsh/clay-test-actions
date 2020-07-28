@@ -1,19 +1,20 @@
 const _ = require('lodash');
 
-const exampleButtonActionDefinition = {
-  name: 'exampleButtonAction',
+const sendToSlackDefinition = {
+  name: 'send-to-slack',
   // type: 'create-update', // default is 'search'
-  function: exampleButtonAction,
+  function: sendToSlack,
   documentationUri: 'http://github.com/clay-run/actions/myfirstactionguide.md',
-  displayName: 'Example Button Action',
-  description: 'Mock action for showing a button column type',
+  iconUri: 'https://clay-base-prod-static.s3.amazonaws.com/icons/32x32/Slack.png',
+  displayName: 'Send to Slack',
+  description: 'Mock "Send to Slack" action with custom button text',
   actionGroups: [],
   inputParameterSchema: [
     {
-      name: 'email',
+      name: 'channel',
       type: 'text',
-      displayName: 'Input email',
-      description: 'Email to send notification to',
+      displayName: 'Input channel',
+      description: 'Slack channel to send notification to',
     },
   ],
   outputParameterSchema: [
@@ -23,17 +24,15 @@ const exampleButtonActionDefinition = {
     },
   ],
   inputSample: {
-    email: 'foo@example.com',
+    channel: '#general',
   },
   outputSample: {
     message: 'it worked!',
   },
 
-  // !!This is the key setting
   viewOptions: {
     button: {
-      // showInCell: true,
-      text: 'Custom button text',
+      text: 'Send notification',
     },
   },
 
@@ -43,11 +42,11 @@ const exampleButtonActionDefinition = {
   isPublic: false,
 };
 
-function exampleButtonAction(actionInputs, context) {
+function sendToSlack(actionInputs, context) {
   try {
-    if (!actionInputs.email) throw new Error('ERROR_MISSING_INPUT');
+    if (!actionInputs.channel) throw new Error('ERROR_MISSING_INPUT');
     const data = {
-      message: `Notification sent to ${actionInputs.email}`,
+      message: `Notification sent to ${actionInputs.channel}`,
     };
     const textPreview = 'Sent ✅';
 
@@ -64,4 +63,4 @@ function exampleButtonAction(actionInputs, context) {
   }
 }
 
-module.exports = exampleButtonActionDefinition;
+module.exports = sendToSlackDefinition;

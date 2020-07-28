@@ -12,6 +12,7 @@ const githubUserLookup = require('./github-user-lookup.js');
 const exampleDataShapes = require('./example-data-shapes.js');
 const exampleViewOptions = require('./example-view-options.js');
 const exampleButtonAction = require('./example-button-action.js');
+const sendToSlack = require('./send-to-slack.js');
 
 const myActionPackage = {
   name: 'tannerwelsh_test_actions', //to uniquely identify an action pacakge for future updates
@@ -22,6 +23,7 @@ const myActionPackage = {
     exampleDataShapes,
     exampleViewOptions,
     exampleButtonAction,
+    sendToSlack,
   ],
 };
 
