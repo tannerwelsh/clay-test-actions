@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@clay-run/clay-action-client": "latest",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   },
   "clay-action-package-id": "f0235266-4e14-460f-a872-020e0cb69384"
 }
