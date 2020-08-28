@@ -8,6 +8,26 @@ const exampleButtonActionDefinition = {
   displayName: 'Example Button Action',
   description: 'Mock action for showing a button column type',
   actionGroups: [],
+// runSettings: {
+//   triggers: {
+//     onInputChange: {
+//       allowed: true,
+//     },
+//     onManualRun: {
+//       allowed: true,
+//       default: true
+//     },
+//   },
+//   conditions: {
+//     allowReRun: {
+//       allowedOptions: [
+//         'never',
+//         'neverExceptWithManualOverride',
+//       ],
+//       default: 'never',
+//     },
+//   }
+// },
   inputParameterSchema: [
     {
       name: 'email',
