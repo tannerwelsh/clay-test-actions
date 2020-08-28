@@ -32,7 +32,7 @@ const sendToSlackDefinition = {
 
   viewOptions: {
     button: {
-      text: 'Send notification',
+      text: 'Send',
     },
   },
 
@@ -48,7 +48,7 @@ function sendToSlack(actionInputs, context) {
     const data = {
       message: `Notification sent to ${actionInputs.channel}`,
     };
-    const textPreview = 'Sent ✅';
+    const textPreview = 'Sent ✓';
 
     return context.success({
       data,
